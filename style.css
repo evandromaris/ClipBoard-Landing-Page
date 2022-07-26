@@ -10,9 +10,6 @@ body{
     background: url(images/bg-header-desktop.png) no-repeat top;
     background-size: contain;   
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 body h1, h2, h3{
@@ -198,14 +195,65 @@ svg:hover path{
     
 }
 
+/* inicio da versão mobile*/
+
 
 @media (max-width: 980px){
+
     body{
-        display: flex;
+        background: url(images/bg-header-mobile.png) no-repeat;
+        width: 375px;
+        background-position: top;
+       
+    }
+     header, h1, h2, h3, p, main, .bt-download, .container-computer,.container-computer img, .container-computer section, .container-device, .container-device img, .container-tools,  .partners, footer, footer .logo, footer img, .footer-links ul, .footer-links ul li{
+        width: 320px;
+        display: grid;
+        grid-template-columns: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:0 auto;
+        text-align: center;       
+        margin: 0 auto;
+        position: relative;
+        padding: 10px 0 0 0;
+        left: 0;
+        right: 0%;
+
+    }
+
+    .partners img {
+        margin-top: 40px;
+        padding-top: 30px ;
+    }
+
+    footer {
+        margin-top: 100px;
         width: 375px;
+        position: relative;
+        left: 0px;
+        
+    }
+
+    footer .logo{
+        padding: 0%;
+        margin: 0;
+    }
+    footer .footer-links {
+        position: relative;
+        right: 0;
+        
+    }
+
+    footer .footer-links ul li {
+        margin-top: 10px;
+    }
+
+    footer .social{
+        margin: 50px 0;
+    }
+
+    footer .social ul li {
+        margin: 20px;
     }
 }
