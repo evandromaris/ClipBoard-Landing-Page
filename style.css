@@ -195,6 +195,21 @@ svg:hover path{
     
 }
 
+footer .code-by{
+    margin: 10px 0;
+    font-size: 12px;
+    grid-column: 2;
+}
+
+footer .code-by a{
+    text-decoration: none;
+    color: hsl(233, 100%, 69%);
+}
+
+footer .code-by a:hover{
+    color: hsl(171, 66%, 44%);
+}
+
 /* inicio da versão mobile*/
 
 
@@ -255,5 +270,9 @@ svg:hover path{
 
     footer .social ul li {
         margin: 20px;
+    }
+
+    footer .code-by{
+        grid-column: 1;
     }
 }
