@@ -217,8 +217,7 @@ footer .code-by a:hover{
 
     body{
         background: url(images/bg-header-mobile.png) no-repeat;
-        width: 375px;
-        background-position: top;
+        background-size: contain;
        
     }
      header, h1, h2, h3, p, main, .bt-download, .container-computer,.container-computer img, .container-computer section, .container-device, .container-device img, .container-tools,  .partners, footer, footer .logo, footer img, .footer-links ul, .footer-links ul li{
@@ -244,9 +243,9 @@ footer .code-by a:hover{
 
     footer {
         margin-top: 100px;
-        width: 375px;
         position: relative;
         left: 0px;
+        width: auto;
         
     }
 
